@@ -6,6 +6,7 @@ import Twitter from "../../../public/footer/social-media-logos/Twitter.svg";
 import Facebook from "../../../public/footer/social-media-logos/Facebook.svg";
 import Linkedin from "../../../public/footer/social-media-logos/LinkedIn.svg";
 import UPI from "../../../public/footer/payment-systems/Upi.svg";
+import { company, buyCryptos, products, support, navlinks } from "../../constants/footerLinks";
 
 const socialIcons = [
   { name: "Instagram", link: "", src: Instagram },
@@ -14,38 +15,6 @@ const socialIcons = [
   { name: "Linkedin", link: "", src: Linkedin },
 ];
 
-const quickLinks = [
-  { item: "Support", link: "/" },
-  { item: "Terms", link: "/" },
-  { item: "Tutorials", link: "/" },
-  { item: "Affiliates", link: "/" },
-];
-
-const company = [
-  { item: "About Us", link: "/" },
-  { item: "Contact", link: "/" },
-  { item: "Blogs", link: "/" },
-];
-const buyCryptos = [
-  { item: "Buy Bitcoin", link: "/" },
-  { item: "Buy Dogecoin", link: "/" },
-  { item: "Buy BTC", link: "/" },
-  { item: "Buy Ethereum", link: "/" },
-  { item: "Buy Solana", link: "/" },
-];
-const products = [
-  { item: "Trading", link: "/" },
-  { item: "Market", link: "/" },
-  { item: "Spot", link: "/" },
-  { item: "Transfer", link: "/" },
-  { item: "Convert", link: "/" },
-];
-const support = [
-  { item: "24/7 Chat Support", link: "/" },
-  { item: "Support Centre", link: "/" },
-  { item: "Terms of Use", link: "/" },
-];
-const navlinks = [company, buyCryptos, products, support];
 
 const Footer: React.FC = () => {
   return (
