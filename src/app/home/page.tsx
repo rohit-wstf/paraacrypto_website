@@ -7,6 +7,9 @@ import PlatformCard from "@/components/home/PlatformCard";
 import CryptoPartners from "@/components/home/CryptoPartners";
 import GlobalPartners from "@/components/home/GlobalPartners";
 import TopCrypto from "@/components/home/TopCrypto";
+import Blogs from "@/components/home/Blogs";
+import Faqs from "@/components/home/Faqs";
+import TrackTokens from "@/components/home/TrackTokens";
 
 const page = () => {
     return (
@@ -23,6 +26,9 @@ const page = () => {
                 <CryptoPartners />
                 <GlobalPartners />
                 <TopCrypto />
+                <Blogs />
+                <Faqs />
+                <TrackTokens />
             </div>
         </>
     )
