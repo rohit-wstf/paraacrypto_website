@@ -5,7 +5,7 @@
 :root {
   --primaryBackground: #caffe5;
   --secondaryBackground: #f4f6f7;
-  --tertiaryBackground: #39F2AE33;
+  --tertiaryBackground: #39f2ae33;
   --linearBackground: linear-gradient(
     258.83deg,
     #e9fff5,
@@ -20,6 +20,11 @@
   --primaryText: #20262c;
   --secondaryText: #3b454f;
   --tertiaryText: #4c5f6e;
+  --linearCardBg: linear-gradient(
+    180deg,
+    rgba(226, 232, 235, 0.2) -8.82%,
+    #e2e8eb 52.94%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +40,10 @@ body {
 
 .linearBg {
   background: var(--linearBackground);
+}
+
+.linearCardBg {
+  background: var(--linearCardBg);
 }
 
 .container-wrapper {
