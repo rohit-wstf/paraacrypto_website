@@ -4,7 +4,8 @@
 
 :root {
   --primaryBackground: #caffe5;
-  --secondaryBackground: #F4F6F7;
+  --secondaryBackground: #f4f6f7;
+  --tertiaryBackground: #39F2AE33;
   --linearBackground: linear-gradient(
     258.83deg,
     #e9fff5,
@@ -45,4 +46,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.top-crypto-card-shadow {
+  box-shadow: 4px 8px 12px 0px #0000001a;
+}
+
+.blog-card-shadow {
+  box-shadow: 2px 4px 12px 0px #26323829;
+}
+
+.hidden-scroll {
+  overflow: scroll;
+  scrollbar-width: none;
 }

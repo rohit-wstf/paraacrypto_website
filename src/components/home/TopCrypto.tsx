@@ -13,9 +13,18 @@ const TopCrypto = () => {
                         View all Assets
                     </h6>
                 </div>
-                <div className="h-[87px]">
-                    <div>
+                <div className="h-[87px] hidden-scroll">
+                    <div className="flex gap-9">
                         <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+
                     </div>
                 </div>
             </div>
@@ -28,17 +37,20 @@ export default TopCrypto;
 const Card = () => {
     return (
         <>
-            <div className="px-3 py-4 flex gap-16 items-center">
-                <div className="flex gap-2">
+            <div className="px-3 py-4 flex gap-16 top-crypto-card-shadow w-fit rounded-xl">
+                <div className="flex gap-2 items-center">
                     <div>
                         <Image src={universityCrest} alt="" className="h-[32px] w-[32px]"></Image>
                     </div>
                     <div>
-                        
+                        <h6 className="text-[16px] leading-6 tracking-[0.15px] text-primaryText">Ethereum</h6>
+                        <p className="text-secondaryText text-[14px] leading-5 tracking-[0.25px]">ETH</p>
                     </div>
                 </div>
-                <div>
-
+                <div className="flex items-start">
+                    <p className="text-secondaryText text-[14px] leading-5 tracking-[0.25px]">
+                        2,987289473
+                    </p>
                 </div>
             </div>
         </>
