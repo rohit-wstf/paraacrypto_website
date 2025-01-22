@@ -4,7 +4,7 @@ import Link from "next/link";
 import Instagram from "../../../public/footer/social-media-logos/Instagram.svg";
 import Twitter from "../../../public/footer/social-media-logos/Twitter.svg";
 import Facebook from "../../../public/footer/social-media-logos/Facebook.svg";
-import Linkedin from "../../../public/footer/social-media-logos/Linkedin.svg";
+import Linkedin from "../../../public/footer/social-media-logos/LinkedIn.svg";
 import UPI from "../../../public/footer/payment-systems/Upi.svg";
 
 const socialIcons = [
@@ -53,22 +53,22 @@ const Footer: React.FC = () => {
       <div className="flex gap-9 ">
         {/* Company Section */}
         <div className="flex justify-center gap-9 flex-wrap text-center sm:text-start">
-          {navlinks.map((link) => (
-            <div className="min-w-[109px] max-w-[210px] w-[203px]">
+          {navlinks.map((link, index) => (
+            <div className="min-w-[109px] max-w-[210px] w-[203px]" key={index}>
               <h5 className="font-medium  text-[18px] md:text-[22px]  text-primaryText  mb-2">
                 {link === company
                   ? "Company"
                   : link === buyCryptos
-                  ? "Buy Cryptos"
-                  : link === products
-                  ? "Products"
-                  : "Support"}
+                    ? "Buy Cryptos"
+                    : link === products
+                      ? "Products"
+                      : "Support"}
               </h5>
               <ul className="flex flex-col gap-2">
-                {link.map((item) => (
+                {link.map((item, index) => (
                   <li
                     className="text-secondaryText font-medium text-[16px] "
-                    key={item.link}
+                    key={index}
                   >
                     <Link href={item.link}>{item.item}</Link>
                   </li>
@@ -130,22 +130,22 @@ const Footer: React.FC = () => {
             <div className="rounded-[4px] p-[6px]">
               <Image src={UPI} width={80} height={50} alt="UPI" />
             </div>
-           
+
           </div>
         </div>
         <div className="flex flex-col gap-3">
-            <h4 className="font-medium text-center md:text-start text-[18px] md:text-[22px]  text-primaryText">
-                Follow Us
-            </h4>
-        <div className="flex gap-5">
-          {socialIcons.map((icon) => {
-            return (
-              <Link href="icon.link" key={icon.link} className="">
-                <Image src={icon.src} width={30} height={30} alt={icon.name} />
-              </Link>
-            );
-          })}
-        </div>
+          <h4 className="font-medium text-center md:text-start text-[18px] md:text-[22px]  text-primaryText">
+            Follow Us
+          </h4>
+          <div className="flex gap-5">
+            {socialIcons.map((icon, index) => {
+              return (
+                <Link href="icon.link" key={index} className="">
+                  <Image src={icon.src} width={30} height={30} alt={icon.name} />
+                </Link>
+              );
+            })}
+          </div>
         </div>
 
       </div>
